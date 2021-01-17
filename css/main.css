@@ -29,10 +29,10 @@ header {
   margin: 0 auto;
   padding: 0 15px;
 }
-.navbar-area {
+/* .navbar-area {
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 1px solid #000;
-}
+} */
 .site-navbar {
   display: flex;
   justify-content: space-between;
@@ -56,6 +56,33 @@ header {
 }
 .site-navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+#login , #sign-up{
+  display: inline-block;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 17px;
+  transition: all .5s ease;
+}
+
+#login{
+  background-color: aquamarine;
+  color: #181818;
+}
+
+#sign-up{
+  background-color: rgb(241, 241, 241);
+  color: #242424;
+}
+#login:hover{
+  background-color: rgb(88, 158, 135);
+  color: #f0f0f0;
+}
+
+#sign-up:hover{
+  background-color: #464646;
+  color: rgb(241, 241, 241);
 }
 
 .nav-toggler {
