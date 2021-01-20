@@ -23,7 +23,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-  transition: all 0.7s ease;
+  transition: all 0.2s ease;
 }
 .container {
   width: 100%;
@@ -63,7 +63,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
   position: relative;
 }
 
@@ -75,7 +75,7 @@ header {
   height: 2px;
   top: 0px;
   left: 0px;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 
 .site-navbar ul li a:hover::before {
@@ -96,7 +96,8 @@ header {
   border-radius: 30px;
   padding: 10px 20px;
   font-size: 17px;
-  transition: all 0.7s ease;
+  transition: all 0.5s ease;
+  box-shadow: none;
 }
 #login::before,
 #sign-up::before {
@@ -182,7 +183,7 @@ header {
 
 #start{
  color: #fff;
- transition: all .4s ease;
+ transition: all .2s ease;
 }
 
 #start:hover{
