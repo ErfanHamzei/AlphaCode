@@ -18,6 +18,7 @@ body {
 header {
   height: 100vh;
   background-image: url("../Images/logo6.jpg");
+  background-color: rgba(0, 0, 0, 0.692);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,16 +176,24 @@ header {
   font-size: 18px;
 }
 
-#main-header-title {
-  margin: 30px 0px;
-  font-size: 50px;
+#main-header-content{
+  font-weight: bolder;
 }
 
-#main-header-contnet {
-  width: 60%;
-  line-height: 28px;
-  font-size: 14px;
-  margin: auto;
+#start{
+ color: #fff;
+ transition: all .4s ease;
+}
+
+#start:hover{
+  background: rgb(29,145,158);
+  background: linear-gradient(90deg, rgba(29,145,158,1) 74%, rgba(13,169,193,1) 84%, rgba(2,190,227,1) 92%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#alphacode-text{
+  color: #16cfcf;
 }
 
 @media screen and (max-width: 767px) {
