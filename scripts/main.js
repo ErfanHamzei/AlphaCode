@@ -36,3 +36,8 @@ navLinks.forEach((link) => {
     document.querySelector("header").style.backgroundColor = "rgba(0, 0, 0, 0.692)";
   });
 });
+
+window.addEventListener("scroll",() => {
+  navMenu.style.top = scrollY;
+  navToggler.style.top = scrollY;
+});

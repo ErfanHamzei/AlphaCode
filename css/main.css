@@ -131,6 +131,7 @@ header {
   cursor: pointer;
   height: 39px;
   display: none;
+  z-index: 200;
 }
 .nav-toggler span,
 .nav-toggler span:before,
@@ -368,6 +369,7 @@ main {
     max-height: 0;
     overflow: hidden;
     transition: 0.3s;
+    z-index: 10;
   }
   .site-navbar ul li {
     width: 100%;
