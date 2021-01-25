@@ -265,12 +265,13 @@ main {
 
 .order-part {
   height: 100vh;
+  margin-bottom: 60px;
 }
 
 .parts{
-  margin-top: 60px;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .order-picture{
@@ -292,7 +293,6 @@ main {
 }
 
 #order-button {
-  position: relative;
   background: rgba(2, 190, 227, 1);
   color: #fff;
   width: 120px;
@@ -301,51 +301,24 @@ main {
   border-radius: 4px;
   transition: 0.6s;
   overflow: hidden;
+  z-index: 35;
 }
 
-#order-button:focus {
-  outline: 0;
-}
-#order-button:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.705);
-  width: 60px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-  filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
-}
-#order-button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  width: 30px;
-  height: 100%;
-  left: 30px;
-  top: 0;
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100px) skewX(-15deg);
-}
 #order-button:hover {
   background: rgb(16, 138, 156);
   cursor: pointer;
 }
-#order-button:hover:before {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 0.6;
-  transition: 0.7s;
+
+
+#our-projects{
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
-#order-button:hover:after {
-  transform: translateX(300px) skewX(-15deg);
-  opacity: 1;
-  transition: 0.7s;
-}
+
+
+/* media queries */
+
 @media screen and (max-width: 767px) {
   .container {
     max-width: 720px;
@@ -396,14 +369,25 @@ main {
     text-align: center;
   }
 
+  .order-picture{
+    margin: 50px 0px;
+    /* border-radius: 71% 29% 61% 39% / 52% 45% 55% 48%  ; */
+  }
+
   #order-button {
     width: 110px;
     height: 45px;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  #our-projects{
+    padding-top: 70px;
   }
   
 }
+
+
 
 @media only screen and (max-width: 900px) and (min-width: 767px) {
   .site-navbar ul li a {
