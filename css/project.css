@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sahel;
+    text-decoration: none !important;
+    outline: none;
+    border: none;
+  }
+
+.title-box {
+    border-bottom: 4px solid #16cfcf;
+    position: relative;
+    height: 60px;
+  }
+  
+  .title {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 67%;
+    padding: 0px 15px 0px 20px;
+    background-color: #fff;
+    user-select: none;
+  }
+
+#our-projects{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .projects{
+    margin: 50px;
+  }
+  
+  .project{
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 8px;
+    margin: 20px 0px;
+    min-height: 200px;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    padding: 0px;
+  }
+  
+  .project img{
+    height: 100%;
+    width: 300px;
+    border-radius: inherit;
+  }
+  
+  .project-description{
+    text-align: right;
+    width: 80%;
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-description a{
+      margin: 10px 0px;
+      font-size: 30px;
+      color: #222;
+      transition: all .6s ease;
+  }
+  
+  .project-description a:hover{
+      color: #13b8b8;
+  }
+  .project-description p{
+    width: 90%;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width : 1000px ) and ( min-width : 787.999px){
+    .project-description a{
+        margin: 20px 0px;
+    }
+  }
+  
+  @media only screen and (max-width : 768px){
+      .project{
+          flex-direction: column;
+          margin: 30px 0px;
+      }
+      
+      .project img{
+          width: 100%;
+          max-height: 300px;
+      }
+      
+      .project-description{
+          margin-top: 20px;
+          width: 100%;
+          padding: 20px 10px;
+      }
+      
+      .project-description p{
+          font-size: 15px;
+          width: 100%;
+      }
+      
+      .project-description a{
+          margin-bottom: 20px;
+      }
+      
+      .projects{
+          margin: 20px;
+      }
+  }
