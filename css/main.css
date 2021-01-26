@@ -264,7 +264,7 @@ main {
 }
 
 .order-part {
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 60px;
 }
 
@@ -316,6 +316,41 @@ main {
   position: relative;
 }
 
+.projects{
+  margin: 50px;
+}
+
+.project{
+  border: 2px solid rgb(236, 236, 236);
+  border-radius: 8px;
+  margin: 20px 0px;
+  height: 200px;
+  display: flex;justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  padding: 0px;
+}
+
+.project img{
+  height: 100%;
+  width: 20%;
+  border-radius: inherit;
+}
+
+.project-description{
+  text-align: right;
+  width: 80%;
+  padding-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-description p{
+  width: 90%;
+  text-align: justify;
+}
 
 /* media queries */
 
