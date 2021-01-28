@@ -37,7 +37,7 @@ navLinks.forEach((link) => {
   });
 });
 
-window.addEventListener("scroll",() => {
-  navMenu.style.top = scrollY;
-  navToggler.style.top = scrollY;
-});
+// window.addEventListener("scroll",() => {
+//   navMenu.style.top = scrollY;
+//   navToggler.style.top = scrollY;
+// });

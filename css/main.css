@@ -288,7 +288,7 @@ main {
   text-align-last: right;
   line-height: 27px;
   direction: rtl;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #order-button {
@@ -309,12 +309,33 @@ main {
   cursor: pointer;
 }
 
+.duration-making-site-description , .host-part-description{
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.duration-making-site-description img , .host-part-description img{
+  border-radius: 50%;
+}
 
+
+.duration-making-site-description p , .host-part-description p{
+  text-align: justify;
+  direction: rtl;
+  line-height: 40px;
+  font-size: 17px;
+  height: 100%;
+  padding: 0px 40px;
+}
 
 
 /* media queries */
 
 @media screen and (max-width: 767px) {
+  p{
+    font-size: 13px !important;
+  }
   .container {
     max-width: 720px;
   }
@@ -357,6 +378,15 @@ main {
     font-size: 36px;
     margin-bottom: 15px;
   }
+  
+  .title{
+    right: 40px;
+    top: 80%;
+    padding: 0px 15px 0px 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
   #main-header-content {
     font-size: 1rem;
   }
@@ -380,6 +410,19 @@ main {
     padding-top: 70px;
   }
   
+ #duration-making-site , #host-part{
+    margin-top: 180px;
+  }
+  
+ .duration-making-site-description p , .host-part-description p{
+   order: 2;
+   line-height: 29px;
+   margin-top: 20px;
+ }
+ 
+ .duration-making-site-description img , .host-part-description img{
+   order: 1;
+ }
 }
 
 
@@ -387,5 +430,9 @@ main {
 @media only screen and (max-width: 900px) and (min-width: 767px) {
   .site-navbar ul li a {
     padding: 20px 15px;
+  }
+  
+  #duration-making-site , #host-part{
+    margin-top: 200px;
   }
 }
