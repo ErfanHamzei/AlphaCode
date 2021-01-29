@@ -43,18 +43,16 @@ window.addEventListener("scroll",() => {
   // navToggler.style.top = scrollY;
   if(innerWidth > 767){
     if(scrollY > innerHeight){
-      // navbar.style.position = "fixed"
-      // navbar.style.zIndex = 244;
-      // navbar.style.width = "100%";
-      // navbar.style.backgroundColor = "#444";
       navbar.classList.add("fix-navbar");
     }
     
     else{
-      // navbar.style.position = "unset";
-      // navbar.style.backgroundColor = "transparent";
       navbar.classList.remove("fix-navbar");
     }
+  }
+  
+  else{
+    navbar.classList.remove("fix-navbar");
   }
 });
 
