@@ -123,6 +123,13 @@ header {
   color: rgb(241, 241, 241);
 }
 
+.fix-navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 355;
+  background-color: rgb(29, 29, 29);
+}
+
 .nav-toggler {
   border: 3px solid #fff;
   padding: 5px;

@@ -1,4 +1,5 @@
 // define all UI variable
+const navbar = document.getElementsByClassName("navbar-area")[0];
 const navToggler = document.querySelector(".nav-toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a , #start");
@@ -37,7 +38,23 @@ navLinks.forEach((link) => {
   });
 });
 
-// window.addEventListener("scroll",() => {
-//   navMenu.style.top = scrollY;
-//   navToggler.style.top = scrollY;
-// });
+window.addEventListener("scroll",() => {
+  // navMenu.style.top = scrollY;
+  // navToggler.style.top = scrollY;
+  if(innerWidth > 767){
+    if(scrollY > innerHeight){
+      // navbar.style.position = "fixed"
+      // navbar.style.zIndex = 244;
+      // navbar.style.width = "100%";
+      // navbar.style.backgroundColor = "#444";
+      navbar.classList.add("fix-navbar");
+    }
+    
+    else{
+      // navbar.style.position = "unset";
+      // navbar.style.backgroundColor = "transparent";
+      navbar.classList.remove("fix-navbar");
+    }
+  }
+});
+
