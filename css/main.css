@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Sahel;
-  text-decoration: none;
+  text-decoration: none !important;
   outline: none;
   border: none;
 }
@@ -11,6 +11,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+p {
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
 }
 
 header {
@@ -40,9 +46,9 @@ header {
 }
 
 .navbar-area {
-  /* background: #222; */
   background-color: transparent;
   padding: 0px 0px;
+  transition: all 0.5s ease;
 }
 
 .site-navbar ul {
@@ -123,7 +129,7 @@ header {
   color: rgb(241, 241, 241);
 }
 
-.fix-navbar{
+.fix-navbar {
   position: fixed;
   width: 100%;
   z-index: 355;
@@ -274,27 +280,24 @@ main {
   margin-bottom: 60px;
 }
 
-.parts{
+.parts {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.order-picture{
+.order-picture {
   margin-bottom: 50px;
   /* border-radius: 71% 29% 61% 39% / 52% 45% 55% 48%  ; */
 }
 
-.order-description{
+.order-description {
   text-align: right;
   padding: 0px 26px 20px 40px;
 }
 
-.order-description p{
-  text-align: justify;
-  text-align-last: right;
+.order-description p {
   line-height: 27px;
-  direction: rtl;
   font-size: 16px;
 }
 
@@ -316,31 +319,69 @@ main {
   cursor: pointer;
 }
 
-.duration-making-site-description , .host-part-description{
+.duration-making-site-description,
+.host-part-description {
   margin-top: 70px;
   display: flex;
   align-items: center;
   padding-bottom: 30px;
 }
-.duration-making-site-description img , .host-part-description img{
+.duration-making-site-description img,
+.host-part-description img {
   border-radius: 50%;
 }
 
-
-.duration-making-site-description p , .host-part-description p{
-  text-align: justify;
-  direction: rtl;
+.duration-making-site-description p,
+.host-part-description p,
+.project-description p {
   line-height: 40px;
   font-size: 17px;
   height: 100%;
   padding: 0px 40px;
 }
 
+.project-parts {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  padding-bottom: 30px;
+}
 
+.project-description {
+  text-align: right;
+}
+
+.project-description p {
+  padding-right: 0px;
+}
+#project-btn {
+  display: inline-block;
+  margin-right: 0px;
+  background-color: rgb(36, 209, 209);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+}
+#project-btn:hover{
+background-color: rgb(26, 150, 150);  
+}
+
+#project-btn:hover .fa-chevron-left {
+  transform: translate(-5px, 2px);
+}
+
+.fa-chevron-left {
+  margin: 1px 3px 0px 3px;
+  transition: transform 0.2s linear;
+  transform: translateY(2px);
+}
 /* media queries */
 
 @media screen and (max-width: 767px) {
-  p{
+  p {
     font-size: 13px !important;
   }
   .container {
@@ -385,23 +426,23 @@ main {
     font-size: 36px;
     margin-bottom: 15px;
   }
-  
-  .title{
+
+  .title {
     right: 40px;
     top: 80%;
     padding: 0px 15px 0px 20px;
     font-size: 20px;
     font-weight: 700;
   }
-  
+
   #main-header-content {
     font-size: 1rem;
   }
-  .order-description{
+  .order-description {
     text-align: center;
   }
 
-  .order-picture{
+  .order-picture {
     margin: 50px 0px;
     /* border-radius: 71% 29% 61% 39% / 52% 45% 55% 48%  ; */
   }
@@ -413,33 +454,46 @@ main {
     margin-top: 10px;
   }
 
-  #our-projects{
+  #our-projects {
     padding-top: 70px;
   }
-  
- #duration-making-site , #host-part{
+
+  #duration-making-site,
+  #host-part {
     margin-top: 180px;
   }
-  
- .duration-making-site-description p , .host-part-description p{
-   order: 2;
-   line-height: 29px;
-   margin-top: 20px;
- }
- 
- .duration-making-site-description img , .host-part-description img{
-   order: 1;
- }
+
+  .duration-making-site-description p,
+  .host-part-description p,
+  .project-description p {
+    order: 2;
+    line-height: 29px;
+    margin-top: 20px;
+    padding: 0px 30px;
+  }
+
+  .duration-making-site-description img,
+  .host-part-description img,
+  .project-image-box {
+    order: 1;
+  }
+
+  .project-description {
+    order: 2;
+  }
+
+  #project-btn {
+    margin-right: 30px;
+  }
 }
-
-
 
 @media only screen and (max-width: 900px) and (min-width: 767px) {
   .site-navbar ul li a {
     padding: 20px 15px;
   }
-  
-  #duration-making-site , #host-part{
+
+  #duration-making-site,
+  #host-part {
     margin-top: 200px;
   }
 }
