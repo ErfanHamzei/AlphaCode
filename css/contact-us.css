@@ -1,0 +1,67 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+    text-decoration: none !important;
+    outline: none;
+    direction: rtl;
+  }
+.row{
+    margin: 0px;
+}
+
+.title-box {
+    border-bottom: 4px solid rgb(22, 207, 207);
+    position: relative;
+    height: 60px;
+  }
+  
+  .title {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 67%;
+    padding: 0px 15px 0px 20px;
+    background-color: #fff;
+    user-select: none;
+  }
+
+
+  .contact-form{
+      /* border: 2px solid #ccc;
+      border-radius: 12px; */
+      padding: 20px;
+      margin: 50px 0px;
+  }
+
+  .form-control:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color:  rgb(22, 207, 207);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(22, 207, 207, .25);
+  }
+
+   .row div{
+      direction: rtl;
+      text-align: right;
+      margin: 15px 0px;
+  }
+
+  .input-label{
+      direction: rtl;
+      display: block;
+      color: rgb(62, 99, 100);
+      font-weight: 700;
+      font-size: 18px;
+  }
+
+  textarea{
+      resize: none;
+  }
+
+  input[type="submit"]{
+      margin-right: 15px;
+  }

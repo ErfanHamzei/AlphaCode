@@ -357,7 +357,7 @@ main {
 #project-btn {
   display: inline-block;
   margin-right: 0px;
-  background-color: rgb(36, 209, 209);
+  background-color: rgb(10, 197, 197);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -458,10 +458,10 @@ background-color: rgb(26, 150, 150);
     padding-top: 70px;
   }
 
-  #duration-making-site,
-  #host-part {
-    margin-top: 180px;
+  #duration-making-site{
+    margin-top: 280px;
   }
+
 
   .duration-making-site-description p,
   .host-part-description p,
