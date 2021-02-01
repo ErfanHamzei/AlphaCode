@@ -39,9 +39,15 @@ navLinks.forEach((link) => {
 });
 
 window.addEventListener("scroll",() => {
-  // navMenu.style.top = scrollY;
-  // navToggler.style.top = scrollY;
+  if(document.querySelector(".toggler-open")){
+    navMenu.style.top = scrollY;
+    navMenu.style.transition = "0s";
+    navToggler.style.top = scrollY;
+    navToggler.style.transition = "none";
+  }
+
   if(innerWidth > 767){
+  
     if(scrollY > innerHeight){
       navbar.classList.add("fix-navbar");
     }
