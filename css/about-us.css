@@ -1,0 +1,96 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sahel;
+  text-decoration: none !important;
+  outline: none;
+  border: none;
+}
+
+p{
+    direction: rtl;
+    text-align: justify;
+}
+
+.title-box {
+  border-bottom: 4px solid #16cfcf;
+  position: relative;
+  height: 60px;
+}
+
+.title {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  top: 67%;
+  padding: 0px 15px 0px 20px;
+  background-color: #fff;
+  user-select: none;
+}
+.row {
+  margin: 0;
+}
+
+#description {
+  padding: 0px 40px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#description p {
+  line-height: 30px;
+  height: 100%;
+}
+
+#description img {
+    border-radius: 78% 43% 65% 50%;
+}
+
+.white-part{
+    display: grid;
+    place-items : center;
+    margin: 20px 0px;
+}
+.card{
+    max-width: 400px;
+}
+.card-body{
+width: 100%;
+text-align: center;
+}
+
+.person-image{
+    max-height: 200px;
+    width: 100%;
+}
+
+#team{
+    margin-top: 70px;
+}
+
+.card-title{
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.card-subtitle{
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  #description {
+    padding: 0px 10px;
+  }
+
+  #description p {
+    order: 2;
+    margin-top: 20px;
+  }
+  .white-part{
+      margin: 20px auto;
+  }
+}
