@@ -82,6 +82,11 @@ header {
   transition: all 0.1s ease;
 }
 
+#main-logo{
+  width: 100px;
+  margin-top: 10px;
+}
+
 .site-navbar ul li a:hover::before {
   border-radius: 50%;
   background-color: #16cfcf;
@@ -418,6 +423,10 @@ background-color: rgb(26, 150, 150);
   .site-navbar ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+  
+  #main-logo{
+    width: 130px;
+  }
   .site-navbar ul.open {
     max-height: 100vh;
     overflow: visible;
@@ -487,7 +496,7 @@ background-color: rgb(26, 150, 150);
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 767px) {
+@media only screen and (max-width: 1100px) and (min-width: 767px) {
   .site-navbar ul li a {
     padding: 20px 15px;
   }
