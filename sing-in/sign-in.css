@@ -1,87 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
 body {
-    background: rgb(33, 49, 65);
-    font-family: Vazir;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    direction: rtl;
-  }
+  background: linear-gradient(to right bottom, #0d5cd3, #7453ee);
+  font-family: Sahel;
+  color: #575757;
+  height: 110vh;
+  direction: rtl;
+  display: grid;
+  place-items: center;
+  padding: 30px 0px;
+}
+
+#sign-in-form {
+  background-color: #fff;
+  width: 30%;
+  padding: 15px 20px 30px 20px;
+  line-height: 60px;
+  border-radius: 8px;
+}
+
+h2{
+  margin-top: 0;
+ border-bottom: 1px solid #d3d3d3;
+ text-align: center;
  
-  
-  .sign-in {
-    width: 400px;
-    margin: 16px auto;
-    font-size: 16px;
+}
+
+input:not(input[type="checkbox"]) {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+#username-input,
+#email-input,
+#password-input,
+#repeat-password-input {
+  background-color: #c2c2c2c7;
+  font-size: 17px;
+}
+
+label {
+  color: #838383;
+  font-size: 18px;
+}
+
+span{
+  display: inline-block;
+  margin-right: 6px;
+}
+
+#forget-password {
+  float : left;
+  text-decoration: none;
+  color: #0d5cd3;
+  font-size: 15px;
+}
+
+#forget-password:hover {
+  color: #0b3d88;
+}
+
+#submit-btn {
+  background-color: rgb(76, 240, 185);
+  color: rgba(49, 49, 49, 0.699);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Sahel;
+  padding: 8px 0px;
+  transition: background-color 0.2s ease;
+  margin-top: 30px;
+}
+
+#submit-btn:hover {
+  background-color: rgb(53, 201, 151);
+}
+
+#seperator {
+  text-align: center;
+  position: relative;
+  font-size: 19px;
+  color: rgb(136, 136, 135);
+}
+
+#seperator:after,
+#seperator:before {
+  content: "";
+  background-color: rgb(136, 136, 135);
+  width: 40%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#seperator:before {
+  left: 0px;
+}
+#seperator:after {
+  right: 0px;
+}
+
+
+#sign-in-with-google{
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #838383;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: #575757;
+  font-family: Sahel;
+  cursor: pointer;
+  transition: background-color .5s ease;
+}
+#sign-in-with-google:hover{
+background-color: #cacaca;
+}
+
+#sign-in-with-google img{
+  width: 40px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width : 680px){
+  #sign-in-form{
+    width: 90%;
   }
-  
-  .sign-in-header,
-  .sign-in p {
-    margin-top: 0;
-    margin-bottom: 0;
+}
+@media only screen and (min-width : 680.111px){
+  #sign-in-form{
+    width: 70%;
   }
-  
-  .sign-in-triangle {
-    width: 0;
-    margin-right: auto;
-    margin-left: auto;
-    border: 12px solid transparent;
-    border-bottom-color: rgb(1,160,251);
+}
+@media only screen and (min-width : 1000px){
+  #sign-in-form{
+    width: 40%;
   }
-  
-  .sign-in-header {
-    background: rgb(1,160,251);
-    padding: 20px;
-    font-size: 1.4em;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-  }
-  
-  .sign-in-container {
-    background: #ebebeb;
-    padding: 12px;
-  }
-  
-  .sign-in p {
-    padding: 12px;
-  }
-  
-  .sign-in input {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-    font-family: inherit;
-    font-size: 0.95em;
-  }
-  
-  .sign-in input[type="email"],
-  .sign-in input[type="password"] {
-    background: #fff;
-    border-color: #bbb;
-    color: #555;
-  }
-  
-  .sign-in input[type="email"]:focus,
-  .sign-in input[type="password"]:focus {
-    border-color: #888;
-  }
-  
-  .sign-in input[type="submit"] {
-    background: rgb(1,160,251);
-    border-color: transparent;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .sign-in input[type="submit"]:hover {
-    background: #17c;
-  }
-  
-  .sign-in input[type="submit"]:focus {
-    border-color: #05a;
-  }
+}
