@@ -100,7 +100,7 @@ header {
 }
 
 #login,
-#sign-up {
+#sign-in {
   display: inline-block;
   border-radius: 30px;
   padding: 10px 20px;
@@ -109,18 +109,20 @@ header {
   box-shadow: none;
 }
 #login::before,
-#sign-up::before {
+#sign-in::before {
   content: "";
   background-color: transparent;
   box-shadow: none;
 }
 
+
 #login {
   background-color: #16cfcf;
   color: #181818;
+  margin-left: -10px;
 }
 
-#sign-up {
+#sign-in {
   background-color: rgb(241, 241, 241);
   color: #242424;
 }
@@ -129,7 +131,7 @@ header {
   color: #f0f0f0;
 }
 
-#sign-up:hover {
+#sign-in:hover {
   background-color: #464646;
   color: rgb(241, 241, 241);
 }
