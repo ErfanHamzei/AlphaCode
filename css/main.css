@@ -6,6 +6,7 @@
   text-decoration: none !important;
   outline: none;
   border: none;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 14px;
@@ -282,7 +283,7 @@ main {
   text-align: justify;
 }
 
-.order-part {
+#order-part {
   height: 80vh;
   margin-bottom: 60px;
 }
