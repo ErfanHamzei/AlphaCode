@@ -84,8 +84,7 @@ header {
 }
 
 #main-logo{
-  width: 100px;
-  margin-top: 10px;
+  width: 60px;
 }
 
 .site-navbar ul li a:hover::before {
@@ -428,7 +427,7 @@ background-color: rgb(26, 150, 150);
   }
   
   #main-logo{
-    width: 130px;
+    width: 100px;
   }
   .site-navbar ul.open {
     max-height: 100vh;
